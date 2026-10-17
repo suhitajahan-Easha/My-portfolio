@@ -5,7 +5,7 @@ A modern, responsive developer portfolio built with Next.js, TypeScript, and Tai
 
 ## 🌐 Live Portfolio
 
-**Live Website:** [View My Portfolio](YOUR_PORTFOLIO_LIVE_URL)
+**Live Website:** [View My Portfolio](https://my-portfolio-suhitajahan-easha.vercel.app/)
 
 ## 👩‍💻 About Me
 
@@ -166,9 +166,9 @@ portfolio/
 I'm open to connecting with developers, collaborating on projects, and exploring suitable junior developer opportunities.
 
 - **GitHub:** [suhitajahan-Easha](https://github.com/suhitajahan-Easha)
-- **LinkedIn:** [YOUR_LINKEDIN_PROFILE_URL](https://www.linkedin.com/in/suhita-jahan-easha/)
+- **LinkedIn:** [LINKEDIN](https://www.linkedin.com/in/suhita-jahan-easha/)
 - **Email:** suhitajahaneasha@gmail.com
-- **Portfolio:** YOUR_PORTFOLIO_LIVE_URL
+- **Portfolio:** [LIVE](https://my-portfolio-suhitajahan-easha.vercel.app/)
 
 ## 🔮 Future Improvements
 

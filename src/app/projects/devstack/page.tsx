@@ -93,7 +93,7 @@ export default function DevStackpage() {
         {/* Project Screenshot */}
         <div className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-[#111827]">
           <Image
-            src="/projects/devstack.png"
+            src="/projects/devstack.PNG"
             alt="DevStack developer resource platform screenshot"
             width={1200}
             height={675}

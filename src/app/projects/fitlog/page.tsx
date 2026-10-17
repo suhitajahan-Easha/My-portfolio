@@ -95,7 +95,7 @@ export default function FitLogpage() {
         {/* Project Screenshot */}
         <div className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-[#111827]">
           <Image
-            src="/projects/fitlog.png"
+            src="/projects/fitlog.PNG"
             alt="FitLog workout planning application screenshot"
             width={1200}
             height={675}

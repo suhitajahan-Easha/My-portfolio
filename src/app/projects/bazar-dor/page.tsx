@@ -97,7 +97,7 @@ export default function BazarDorpage() {
         {/* Project Screenshot */}
         <div className="mt-10 overflow-hidden rounded-2xl border border-white/10">
           <Image
-            src="/projects/bazardor.png"
+            src="/projects/bazardor.PNG"
             alt="Bazar Dor application screenshot"
             width={1200}
             height={675}

@@ -447,7 +447,7 @@ export default function Home() {
               {/* Project Screenshot */}
               <div className="aspect-video overflow-hidden bg-[#080D1A]">
                 <Image
-                  src="/projects/bazardor.png"
+                  src="/projects/bazardor.PNG"
                   alt="Bazar Dor Bengali market price tracker"
                   width={600}
                   height={340}
@@ -522,7 +522,7 @@ export default function Home() {
               {/* Project Screenshot */}
               <div className="aspect-video overflow-hidden bg-[#080D1A]">
                 <Image
-                  src="/projects/devstack.png"
+                  src="/projects/devstack.PNG"
                   alt="DevStack developer resource platform"
                   width={600}
                   height={340}
@@ -597,7 +597,7 @@ export default function Home() {
               {/* Project Screenshot */}
               <div className="aspect-video overflow-hidden bg-[#080D1A]">
                 <Image
-                  src="/projects/fitlog.png"
+                  src="/projects/fitlog.PNG"
                   alt="FitLog workout and gym planning application"
                   width={600}
                   height={340}
