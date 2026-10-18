@@ -1,4 +1,3 @@
-
 "use client";
 import { motion } from "framer-motion";
 import {
@@ -85,18 +84,24 @@ export default function Home() {
             <a className="transition hover:text-blue-400" href="#about">
               About
             </a>
-            <a className="transition hover:text-blue-400" href="#education"
-             onClick={(e) => {
+            <a
+              className="transition hover:text-blue-400"
+              href="#education"
+              onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("education");
-              }}>
+              }}
+            >
               Education
             </a>
-            <a className="transition hover:text-blue-400" href="#skills"
-             onClick={(e) => {
+            <a
+              className="transition hover:text-blue-400"
+              href="#skills"
+              onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("skills");
-              }}>
+              }}
+            >
               Skills
             </a>
             <a
@@ -109,11 +114,14 @@ export default function Home() {
             >
               Projects
             </a>
-            <a className="transition hover:text-blue-400" href="#contact"
-             onClick={(e) => {
+            <a
+              className="transition hover:text-blue-400"
+              href="#contact"
+              onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("contact");
-              }}>
+              }}
+            >
               Contact
             </a>
           </div>
@@ -187,11 +195,11 @@ export default function Home() {
             </a>
           </div>
 
-          {/* <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-500">
+          <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-500">
             <span>React & Next.js</span>
             <span>TypeScript</span>
             <span>Full Stack Development</span>
-          </div> */}
+          </div>
         </div>
 
         <div className="mx-auto w-full max-w-xs">
@@ -221,7 +229,7 @@ export default function Home() {
         </div>
       </section>
       {/* section about */}
-      <motion.section
+      {/* <motion.section
         id="about"
         className="border-y border-white/[0.06] bg-[#0C1323]"
         initial={{ opacity: 0, y: 24 }}
@@ -268,7 +276,90 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </motion.section> */}
+
+      <motion.section
+        id="about"
+        className="border-y border-white/[0.06] bg-[#0C1323]"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.12 }}
+        transition={{ duration: 0.65, ease: "easeOut" }}
+      >
+        <div className="mx-auto grid max-w-6xl gap-8 px-6 py-20 md:grid-cols-[0.7fr_1.3fr]">
+          {/* About Heading */}
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blue-400">
+              About Me
+            </p>
+
+            <h2 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl">
+              Turning ideas into useful web experiences.
+            </h2>
+          </div>
+
+          {/* About Description */}
+          <div className="space-y-5 leading-8 text-slate-400">
+            <p>
+              I&apos;m Suhita Jahan Easha, a Full Stack Developer passionate
+              about building modern, responsive, and user-friendly web
+              applications.
+            </p>
+
+            <p>
+              I enjoy turning ideas into practical solutions, exploring new
+              technologies, and improving my development skills through hands-on
+              projects.
+            </p>
+
+            <p>
+              I&apos;m currently seeking junior-level opportunities in frontend,
+              backend, or full stack development where I can contribute to
+              real-world projects, collaborate with experienced developers, and
+              grow as a software developer.
+            </p>
+
+            {/* Resume and Social Links */}
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              {/* Resume */}
+              <a
+                href="YOUR_GOOGLE_DRIVE_RESUME_LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-blue-400/40 px-4 py-2.5 text-sm font-medium text-blue-300 transition hover:bg-blue-400/10"
+              >
+                <FaFileAlt size={16} />
+                Resume
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/suhita-jahan-easha/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my LinkedIn profile"
+                title="LinkedIn"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-slate-300 transition hover:border-blue-400/50 hover:bg-blue-400/10 hover:text-blue-400"
+              >
+                <FaLinkedinIn size={19} />
+              </a>
+
+              {/* GitHub */}
+              <a
+                href="https://github.com/suhitajahan-Easha"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my GitHub profile"
+                title="GitHub"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-slate-300 transition hover:border-blue-400/50 hover:bg-blue-400/10 hover:text-blue-400"
+              >
+                <FaGithub size={19} />
+              </a>
+            </div>
+          </div>
+        </div>
       </motion.section>
+
       {/* education */}
       <motion.section
         id="education"
