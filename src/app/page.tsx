@@ -26,7 +26,7 @@ import {
   SiNetlify,
   SiVercel,
 } from "react-icons/si";
-import { FaShieldAlt, FaCode } from "react-icons/fa";
+import { FaShieldAlt, FaCode,FaKey } from "react-icons/fa";
 import Image from "next/image";
 
 function SectionTitle({
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
 
           <a
-            href="YOUR_GOOGLE_DRIVE_RESUME_LINK"
+            href="https://drive.google.com/file/d/1xAPhWQmvZy0RW3LlMkU-OJ8FAaYSuKAF/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border border-blue-400/40 px-4 py-2.5 text-sm font-medium text-blue-300 transition hover:bg-blue-400/10"
@@ -323,7 +323,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-3 pt-2">
               {/* Resume */}
               <a
-                href="YOUR_GOOGLE_DRIVE_RESUME_LINK"
+                href="https://drive.google.com/file/d/1xAPhWQmvZy0RW3LlMkU-OJ8FAaYSuKAF/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg border border-blue-400/40 px-4 py-2.5 text-sm font-medium text-blue-300 transition hover:bg-blue-400/10"
@@ -384,7 +384,7 @@ export default function Home() {
             whileHover={{ y: -4 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
           >
-            <p className="text-sm font-medium text-blue-400">2024 – 2025</p>
+            <p className="text-sm font-medium text-blue-400">2022 – 2024</p>
             <h3 className="mt-3 text-xl font-semibold text-white">
               Master&apos;s in Engineering
             </h3>
@@ -402,7 +402,7 @@ export default function Home() {
             whileHover={{ y: -4 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
           >
-            <p className="text-sm font-medium text-blue-400">2017 – 2024</p>
+            <p className="text-sm font-medium text-blue-400">2017 – 2022</p>
             <h3 className="mt-3 text-xl font-semibold text-white">
               Bachelor of Science in Engineering
             </h3>
@@ -460,6 +460,7 @@ export default function Home() {
               { name: "Express.js", icon: SiExpress, color: "#FFFFFF" },
               { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
               { name: "Better Auth", icon: FaShieldAlt, color: "#60A5FA" },
+              { name: "JWT", icon: FaKey, color: "#F59E0B" },
               { name: "REST APIs", icon: FaCode, color: "#60A5FA" },
             ],
           },
@@ -529,6 +530,94 @@ export default function Home() {
           />
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* //classicstudio project card */}
+            <motion.div
+              className="group overflow-hidden rounded-2xl border border-white/10 bg-[#111827] transition duration-300 hover:-translate-y-1 hover:border-blue-400/40"
+              whileHover={{ y: -6 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+            >
+              {/* Project Screenshot */}
+              <div className="aspect-video overflow-hidden bg-[#080D1A]">
+                <Image
+                  src="/projects/classicstudio.PNG"
+                  alt="ClassicStudio studio booking marketplace"
+                  width={600}
+                  height={340}
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              {/* Project Information */}
+              <div className="p-5">
+                <h3 className="text-xl font-bold text-white">ClassicStudio</h3>
+
+                <p className="mt-2 text-sm leading-6 text-slate-400">
+                  A full-stack studio booking marketplace where creators can
+                  discover creative spaces, explore studio details, check
+                  availability, and manage reservations, while studio owners can
+                  list and manage their spaces and bookings.
+                </p>
+
+                {/* Technologies */}
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {[
+                    "Next.js",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB",
+                    "Better Auth",
+                    "JWT",
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-md bg-blue-400/10 px-2.5 py-1 text-xs text-blue-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Project Links */}
+                <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-white/10 pt-4">
+                  <a
+                    href="https://classicstudio-client.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-blue-400 transition hover:text-blue-300"
+                  >
+                    Live Demo ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/suhitajahan-Easha/Classicstudio-client"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-slate-300 transition hover:text-white"
+                  >
+                    Client GitHub ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/suhitajahan-Easha/Classicstudio-server"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-slate-300 transition hover:text-white"
+                  >
+                    Server GitHub ↗
+                  </a>
+
+                  <a
+                    href="/projects/classicstudio"
+                    className="text-sm font-semibold text-slate-300 transition hover:text-blue-300"
+                  >
+                    View Details →
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Bazar Dor Project Card */}
             <motion.div
               className="group overflow-hidden rounded-2xl border border-white/10 bg-[#111827] transition duration-300 hover:-translate-y-1 hover:border-blue-400/40"

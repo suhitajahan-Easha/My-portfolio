@@ -1,7 +1,7 @@
 
 # Suhita Jahan Easha — Developer Portfolio
 
-A modern, responsive developer portfolio built with Next.js, TypeScript, and Tailwind CSS. This portfolio showcases my technical skills, education, projects, and contact information in a clean, accessible interface.
+A modern, responsive developer portfolio built with Next.js, TypeScript, and Tailwind CSS. This portfolio showcases my technical skills, educational background, projects, and contact information through a clean and accessible interface.
 
 ## 🌐 Live Portfolio
 
@@ -11,7 +11,7 @@ A modern, responsive developer portfolio built with Next.js, TypeScript, and Tai
 
 Hi, I'm **Suhita Jahan Easha**, an aspiring software developer passionate about building modern, responsive, and user-friendly web applications.
 
-I work with React.js and Next.js to develop interactive web experiences, with a focus on clean code, reusable components, and responsive design. I am continuously improving my development skills and building projects to strengthen my practical experience.
+I specialize in building modern, responsive, and user-friendly web applications using React.js and Next.js. My experience includes developing full-stack applications with Node.js, Express.js, and MongoDB, implementing authentication and secure APIs, and creating scalable, maintainable solutions. I enjoy turning ideas into functional web experiences through clean code, reusable components, and thoughtful UI design. I am continuously expanding my technical skills and strengthening my problem-solving abilities through hands-on projects and practical development.
 
 ## ✨ Features
 
@@ -21,7 +21,7 @@ I work with React.js and Next.js to develop interactive web experiences, with a 
 - **Education Section:** An overview of my academic qualifications.
 - **Skills Section:** A dedicated section highlighting my technical skills.
 - **Projects Showcase:** Featured projects with descriptions, technologies, live demos, and GitHub repositories.
-- **Project Details Pages:** Dedicated pages describing project features, challenges, and planned improvements.
+- **Project Details Pages:** Dedicated pages describing project features, technologies, challenges, and planned improvements.
 - **Resume Access:** A direct link to view my resume.
 - **Contact Section:** Ways to connect with me professionally.
 - **Smooth Navigation:** Easy access to sections through the sticky navigation bar.
@@ -43,43 +43,72 @@ I work with React.js and Next.js to develop interactive web experiences, with a 
 
 ## 🚀 Featured Projects
 
-### 1. Bazar Dor — Bengali Market Price Tracker
+### 1. ClassicStudio — Creative Studio Booking Marketplace
 
-A Bengali-first market price tracking application designed to help users explore everyday product prices and compare market rates.
+A full-stack studio booking marketplace designed for creators, photographers, filmmakers, podcasters, and musicians. It connects creators with creative spaces while allowing studio owners to list their spaces and manage reservations.
 
-**Technologies:** Next.js, React, TypeScript, Tailwind CSS, MongoDB, Better Auth
+**Technologies:** Next.js, React, TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB, Better Auth, JWT, REST APIs.
 
-- Browse products across multiple categories.
-- View localized prices using Bengali numerals.
-- Explore price changes and product information.
-- Access protected pages using authentication.
+**Key Features:**
+- Explore creative studios, including photography spaces, podcast rooms, music studios, and more.
+- Browse studio listings with hourly rates, locations, ratings, amenities, and capacity.
+- View detailed studio information and facilities.
+- Allow studio owners to list and manage their creative spaces.
+- Implement secure authentication using Better Auth and JWT-based authorization.
+- Enable creators to reserve studio spaces.
+- Manage studio reservations and booking information.
+- Allow studio owners to view and manage bookings associated with their listings.
+- Provide protected routes and responsive layouts across devices.
+
+- **Live Demo:** [Visit ClassicStudio](https://classicstudio-client.vercel.app/)
+- **Client Repository:** [View Client Source Code](https://github.com/suhitajahan-Easha/Classicstudio-client)
+- **Server Repository:** [View Server Source Code](https://github.com/suhitajahan-Easha/Classicstudio-server)
+
+### 2. Bazar Dor (বাজার দর) — Bengali Market Price Tracker
+
+A Bengali-first market price tracking application designed to help users explore everyday product prices, compare market rates, and understand price fluctuations through an intuitive interface.
+
+**Technologies:** Next.js, React, TypeScript, Tailwind CSS, MongoDB, Better Auth.
+
+**Key Features:**
+- Browse everyday essentials across multiple product categories.
+- Display prices using Bengali numerals.
+- Explore product price changes and market information.
+- Access protected product details and profile pages through authentication.
+- View account information and manage profile details.
+- Enjoy a responsive interface across different devices.
 
 - **Live Demo:** [Visit Bazar Dor](https://bazar-dor-suhitajahan-easha.vercel.app/)
 - **Repository:** [View Source Code](https://github.com/suhitajahan-Easha/bazar-dor-24)
 
-### 2. DevStack — Developer Resource Platform
+### 3. DevStack — Developer Resource Platform
 
-A developer-focused web application designed to present development resources through an organized, responsive interface.
+A developer-focused web application designed to present development resources through an organized and responsive interface.
 
-**Technologies:** React.js, JavaScript, Tailwind CSS, HTML5, CSS3
+**Technologies:** React.js, JavaScript, Tailwind CSS, HTML5, CSS3.
 
+**Key Features:**
 - Explore developer-focused content and resources.
 - Navigate a clean, component-based interface.
+- Add and delete resources.
+- Remove all resources with a single action.
 - Use a responsive layout across different screen sizes.
 
 - **Live Demo:** [Visit DevStack](https://devstack-assignment-5-ph.netlify.app/)
 - **Repository:** [View Source Code](https://github.com/suhitajahan-Easha/Assignment-5-PH)
 
-### 3. FitLog — Workout Planning Web App
+### 4. FitLog — Workout Planning Web App
 
 A workout companion that helps users explore exercises, create daily workout plans, and save exercises for later.
 
-**Technologies:** Next.js, React.js, TypeScript, Tailwind CSS, daisyUI
+**Technologies:** Next.js, React.js, TypeScript, Tailwind CSS, daisyUI.
 
+**Key Features:**
 - Browse exercises by muscle group.
 - View exercise details and instructions.
 - Create daily workout plans with a five-exercise limit.
 - Save exercises and sort workout lists.
+- Enjoy a responsive workout planning experience.
 
 - **Live Demo:** [Visit FitLog](https://assignment-6-fit-log-phi.vercel.app/)
 - **Repository:** [View Source Code](https://github.com/suhitajahan-Easha/Fit-log)
@@ -99,7 +128,7 @@ Make sure you have installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/suhitajahan-Easha/My-portfolio
+git clone https://github.com/suhitajahan-Easha/My-portfolio.git
 ```
 
 ### 2. Navigate to the Project Directory
@@ -138,7 +167,8 @@ The project follows the Next.js App Router structure. Your exact files may diffe
 portfolio/
 ├── public/
 │   └── projects/
-│       ├── bazardor.png
+│       ├── classicstudio.PNG
+│       ├── bazardor.PNG
 │       ├── devstack.png
 │       └── fitlog.png
 ├── src/
@@ -147,6 +177,8 @@ portfolio/
 │       ├── page.tsx
 │       ├── globals.css
 │       └── projects/
+│           ├── classicstudio/
+│           │   └── page.tsx
 │           ├── bazar-dor/
 │           │   └── page.tsx
 │           ├── devstack/
@@ -166,9 +198,9 @@ portfolio/
 I'm open to connecting with developers, collaborating on projects, and exploring suitable junior developer opportunities.
 
 - **GitHub:** [suhitajahan-Easha](https://github.com/suhitajahan-Easha)
-- **LinkedIn:** [LINKEDIN](https://www.linkedin.com/in/suhita-jahan-easha/)
+- **LinkedIn:** [Suhita Jahan Easha](https://www.linkedin.com/in/suhita-jahan-easha/)
 - **Email:** suhitajahaneasha@gmail.com
-- **Portfolio:** [LIVE](https://my-portfolio-suhitajahan-easha.vercel.app/)
+- **Portfolio:** [Visit My Portfolio](https://my-portfolio-suhitajahan-easha.vercel.app/)
 
 ## 🔮 Future Improvements
 
